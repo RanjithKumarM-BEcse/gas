@@ -7,13 +7,13 @@ export default defineConfig({
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
-      // ... your existing aliases (keeping them for your project logic)
+      // Keep only this internal alias
       '@': path.resolve(__dirname, './src'),
     },
   },
   build: {
     target: 'esnext',
-    outDir: 'dist', // Changed from 'build' to 'dist' to match Vercel default
+    outDir: 'dist', 
   },
   server: {
     port: 3000,
