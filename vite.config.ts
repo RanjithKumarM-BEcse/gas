@@ -57,4 +57,10 @@
       port: 3000,
       open: true,
     },
+    // vite.config.js
+export default {
+  build: {
+    outDir: 'dist', // Ensure this is 'dist' or matches your Vercel settings
+  }
+}
   });
